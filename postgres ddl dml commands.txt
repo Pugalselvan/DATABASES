@@ -1,0 +1,18 @@
+SELECT *FROM epm;
+
+--DDL AND DML commands--
+
+INSERT INTO epm(emp_id,emp_name,job,gender,address) VALUES (6,'soma','admin','male','madurai');
+SELECT *FROM epm;
+UPDATE epm SET emp_name='kavin' WHERE emp_id=6;
+SELECT *FROM epm;
+DELETE FROM epm WHERE emp_id=6;
+DELETE FROM epm WHERE emp_id=5;
+SELECT *FROM epm;
+
+ALTER TABLE emp
+RENAME COLUMN address TO new_locaton;
+ALTER TABLE epm
+DROP COLUMN location;
+
+TRUNCATE TABLE emp;
